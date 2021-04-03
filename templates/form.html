@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <form action="#">
+            <fieldset>
+                <legend>КОНТАКТНАЯ ИНФОРМАЦИЯ</legend>
+
+                <p><label for="username">Имя</label>
+                <input id="username" type="text" name="user-name"
+                placeholder="Ваше имя" required></p>
+
+                <p><label for="userPhone">Телефон</label>
+                <input id="userPhone" type="telNo" name="userPhone"
+                placeholder="Ваш телефон" required></p>
+
+                <p><label for="useremail">E-mail</label>
+                <input id="useremail" type="email" name="useremail"
+                placeholder="Ваш E-mail" required></p>
+
+                <p><label for="visitingday">Дата посещения</label>
+                <input id="visitingday" type="date" name="visitingday"
+                placeholder="Дата" required></p>
+            </fieldset> 
+            <br>
+            <br>
+            <fieldset>
+                <legend>ПЕРСОНАЛЬНАЯ ИНФОРМАЦИЯ</legend>
+
+                <p><label for="userage">Возраст</label>
+                <input id="userage" type="number" min="1" max="100" step="1" name="userage" placeholder="Ваш возраст" required></p>
+
+                <p><label for="lovelyfood">Любимая кухня</label>                
+                    <select name="lovelyfood" id="lovelyfood">
+                        <option value="uk">Украинская</option>
+                        <option value="ru">Русская</option>
+                        <option value="asian">Азиатская</option>
+                        <option value="ge">Грузинская</option>
+                    </select>
+                </p>
+
+                <p><label for="lovelydish">Какие блюда хотели бы увидеть в меню?</label>
+                <textarea id="lovelydish"></textarea>
+                </p>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>ОЦЕНКА НАШЕГО ЗАВЕДЕНИЯ</legend>
+                <p>Почему выбрали наше заведение?</p>
+                <p><label><input type="radio" name="reason" value="place">Недалеко от дома/работы</label></p>
+                <p><label><input type="radio" name="reason" value="advertising">Увидел рекламу</label></p>
+                <p><label><input type="radio" name="reason" value="recommendation">Посоветовали</label></p>
+                <p><label><input type="radio" name="reason" value="price/quality">Оптимальное соотношение цены и качества</label></p>
+                <br>
+                <p>Вы будете рекомендовать наше заведение своим знакомым?</p>
+                <p><label><input type="radio" name="super" value="yes">Да</label></p>
+                <p><label><input type="radio" name="super" value="no">Нет</label></p>              
+            </fieldset>
+            <br>
+            <br>    
+            <button>Отправить</button>
+        </form>
+    </main>
+</body>
+</html>    
